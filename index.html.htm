@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60726752-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+ 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-60726752-3');
+    </script>
+ 
+    <!-- Google Ads Auto -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-9655830461045889",
+            enable_page_level_ads: true
+        });
+    </script>
+    
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDlCBnVTH0kCoyLYVnIBlSSUufHh931yV8XA&usqp=CAU">
+    <title>Webuilding</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light sticky-top">
+  <a class="navbar-brand" href="#">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDlCBnVTH0kCoyLYVnIBlSSUufHh931yV8XA&usqp=CAU" width="30" height="30" class="d-inline-block align-top rounded-circle" alt="logo">
+    Webuilding
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+  <div>
+  <div>
+<a href="content://com.google.android.apps.nbu.files.provider/1/%2F%2F%2Fstorage%2Femulated%2F0%2FAcode%2Findex.html.htm"><button class="btn btn-primary" type="submit" >Home</button></a>
+<a href="content://com.google.android.apps.nbu.files.provider/1/%2F%2F%2Fstorage%2Femulated%2F0%2FAcode%2Fabout.html.htm"><button class="btn btn-primary" type="submit">About</button></a>
+<a href="content://com.google.android.apps.nbu.files.provider/1/%2F%2F%2Fstorage%2Femulated%2F0%2FAcode%2Fcontact.html.htm"><button class="btn btn-primary" type="submit">Contact</button></a>
+</div>
+</div>
+</ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+    </form>
+    <div>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <div>
+      <div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">SignUp</button>
+        </div>
+        </div>
+       </ul>
+    </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+ 
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModal">Login using your credentials</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+ 
+                <div class="modal-body">
+                    <form action="/profile/login" method='post'><input type="hidden" name="csrfmiddlewaretoken" value="VDtUcST31fK3okQzae0wZIfOYZirzwKBQTcEt8yZwHcjHcV9lBNEDE7IDV1TfeQj">
+                        <div class="form-group">
+                            <label for="lusername">Username</label>
+                            <input type="name" class="form-control" id="luname" placeholder="Enter your username" name="uname">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="lpassword" placeholder="Enter your password" name="password">
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m"></div>
+                        <input type="hidden" name="path" value="/">
+ 
+                        <button type="submit" class="btn btn-danger mt-2" id="loginsubmit">Login</button>
+                    </form>
+                </div>
+ 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+ 
+            </div>
+        </div>
+    </div>
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModal">SignUp for an account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+ 
+                <div class="modal-body">
+                    <form name="contact" method="post" action="/profile/signup"><input type="hidden" name="csrfmiddlewaretoken" value="VDtUcST31fK3okQzae0wZIfOYZirzwKBQTcEt8yZwHcjHcV9lBNEDE7IDV1TfeQj">
+ 
+                        <div class="form-group">
+                            <label for="uname">Username</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter your Name" name="uname">
+                            <small id="unamehelp" class="form-text text-muted px-1">
+                                Your unique username must be less than 10 characters (only lowecase letters, numbers & underscores
+                                allowed) with no spaces
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">First Name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your First Name" name="fname">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Last Name</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter your Last Name" name="lname">
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <div class="mx-0">
+                                <div class="col-md-8 px-0">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your Email" name="email">
+                                    <small id="otpMessage" class="form-text"></small>
+                                </div>
+                                <div class="col-md-4 my-1 px-0">
+                                    <button class="btn btn-danger btn-sm mt-2" id="otpbtn">Send OTP</button>
+                                </div>
+                            </div>
+ 
+                        </div>
+                        <div class="form-group">
+                            <label for="otp">Enter OTP</label>
+                            <input type="text" class="form-control" id="otp" placeholder="Enter OTP" name="otp">
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="password">Choose a password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Choose a password" name="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2">Retype a password</label>
+                            <input type="password" class="form-control" id="password2" placeholder="Retype your password" name="password2">
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m"></div>
+                        <input type="hidden" name="path" value="/">
+                        <button type="submit" class="btn btn-danger mt-2">SignUp</button>
+                    </form>
+                </div>
+ 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<section class="text-gray-700 body-font">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcThO2qfLprSCKg1UqpTge2wfMHScjhDimJeKA&usqp=CAU/720x600">
+
+    <div class="text-center lg:w-2/3 w-full">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Do you want to have a website of your shops pr other for advertising products, etc. </h1>
+      <p class="mb-8 leading-relaxed">If yes then you do not need to do anything, accepting tapping on "<a href="#" style="color: black;">Enroll Now</a>" then fill the form. And you will find your website on your web browser.<strong></p>
+    </div>
+  </div>
+</section>
+<footer class="text-gray-700 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDlCBnVTH0kCoyLYVnIBlSSUufHh931yV8XA&usqp=CAU" width="30" height="30" class="d-inline-block align-top rounded-circle" alt="logo">
+      <span class="ml-3 text-xl">Webuilding</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Webuilding —
+      
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
+<marquee style="color: red;"><h4>Thanks for visiting to our website</h4></marquee>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
